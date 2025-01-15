@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../../img/FONDO_COMERCIO_43X26_Mesa_de_trabajo1.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 3rem 0;
+    text-align: center;
+    text-shadow: 
+        0 0 10px rgb(255, 217, 148),  
+        0 0 20px rgba(255, 217, 144),  
+        0 0 30px rgba(255, 217, 140); 
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    animation: slideIn 0.5s forwards;
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.2s;
+}
+
+.form-container:hover {
+    transform: scale(1.02); 
+}
+
+.form-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+p {
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #c00;
+    font-size: 18px;
+    text-align: center; 
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 2px solid #c00; 
+    border-radius: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #ff4d4d; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5); 
+}
+
+input[name="Nro_Maquina"] {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: 2px solid #c00; 
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    max-width: 300px; 
+    margin: 0 auto;  
+    display: block;
+}
+
+.button_agregar {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #c00; 
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #a00; 
+    transform: scale(1.05); 
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        padding: 25px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    p {
+        font-size: 16px; 
+    }
+}

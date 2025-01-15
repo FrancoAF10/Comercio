@@ -1,0 +1,187 @@
+body {
+    background-color: #f70606 !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+.imagen {
+    background-image: url('../../img/FONDO_COMERCIO_43X26_Mesa_de_trabajo1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.titulo {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    animation: slideIn 0.5s forwards;
+    max-width: 600px;
+    margin: auto;
+    transition: transform 0.2s;
+}
+
+table {
+    border: 2px solid #000000 !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    animation: slideIn 0.5s forwards;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    transition: transform 0.2s;
+    table-layout: fixed;
+    font-size: 9pt;
+    overflow-x: auto; 
+}
+
+table th {
+    background-color: red !important;
+    color: white !important;
+}
+
+th, td {
+    border: 2px solid #2c2625!important;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.table-container {
+    margin-top: 20px;
+    padding: 20px;
+    overflow-x: auto; 
+    width: 100%;
+}
+
+.buttons-containers {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container-fluid {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #ff6f61 !important;
+    text-decoration: underline;
+}
+
+.navbar .navbar-brand {
+    color: #f8f9fa !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 40px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-left: 598px;
+}
+
+.navbar-toggler-icon {
+    background-color: #f8f9fa;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+    color: #ff6f61 !important;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+.btn-primary:hover {
+    background-color: #f8b4ab;
+    border-color: #f8b4ab;
+}
+
+#btn-table {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    min-width: 60px;
+    min-height: 30px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll !important;
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table {
+        width: auto;
+        min-width: 800px;
+        font-size: 10px;
+        table-layout: auto;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+
+    .buttons-containers {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    #btn-table {
+        font-size: 10px;
+        padding: 8px 15px;
+        min-width: 60px;
+    }
+
+    .navbar-nav .nav-item:last-child {
+        margin-left: 0;
+    }
+}

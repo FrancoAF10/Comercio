@@ -1,0 +1,18 @@
+{
+    "name": "anton/comercio",
+    "autoload": {
+        "psr-4": {
+            "Anton\\Comercio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gian Franco"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^3.6",
+        "phpmailer/phpmailer": "^6.9",
+        "tecnickcom/tcpdf": "^6.8"
+    }
+}
